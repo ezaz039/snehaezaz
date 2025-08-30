@@ -530,6 +530,63 @@
                 height: 200px;
             }
         }
+        /* Countdown Section Styling */
+        #countdown {
+            padding: 40px 0; /* reduced height */
+            background: #fcf8f5;
+        }
+
+        .countdown-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .countdown-item {
+            background: white;
+            padding: 20px 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            min-width: 100px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .countdown-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(183, 110, 121, 0.25);
+        }
+
+        .countdown-number {
+            font-family: 'Marcellus', serif;
+            font-size: 2.8rem;
+            color: #b76e79;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .countdown-label {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem;
+            color: #5a4b41;
+            letter-spacing: 1px;
+        }
+
+        /* Responsive */
+        @media(max-width:768px){
+            .countdown-item {
+                padding: 15px 20px;
+                min-width: 80px;
+            }
+            .countdown-number {
+                font-size: 2.2rem;
+            }
+            .countdown-label {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -556,7 +613,35 @@
     </div>
 </div>
 
-<section id="story">
+<!-- Countdown Section: Moved here -->
+<section id="countdown">
+    <div class="container">
+        <div class="section-title">
+            <h2>Countdown to Our Wedding</h2>
+            <p>Every second brings us closer to forever 💖</p>
+        </div>
+        <div class="countdown-container">
+            <div class="countdown-item">
+                <span class="countdown-number" id="days">00</span>
+                <span class="countdown-label">Days</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number" id="hours">00</span>
+                <span class="countdown-label">Hours</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number" id="minutes">00</span>
+                <span class="countdown-label">Minutes</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number" id="seconds">00</span>
+                <span class="countdown-label">Seconds</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="story" style="padding: 0 0;">
     <div class="container">
         <div class="section-title">
             <h2>Our Beautiful Journey</h2>
@@ -771,6 +856,34 @@
         console.log("%c❤️ Eternal Love ❤️", "color: #b76e79; font-size: 20px; font-weight: bold;");
         console.log("%cCongratulations on your engagement!", "color: #8a7866; font-size: 16px;");
     });
+
+    // Countdown Timer
+    const weddingDate = new Date("2025-09-10T10:00:00").getTime();
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = weddingDate - now;
+
+        if(distance < 0) {
+            document.getElementById("days").innerText = "0";
+            document.getElementById("hours").innerText = "0";
+            document.getElementById("minutes").innerText = "0";
+            document.getElementById("seconds").innerText = "0";
+            return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerText = days.toString().padStart(2,'0');
+        document.getElementById("hours").innerText = hours.toString().padStart(2,'0');
+        document.getElementById("minutes").innerText = minutes.toString().padStart(2,'0');
+        document.getElementById("seconds").innerText = seconds.toString().padStart(2,'0');
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
 </script>
 </body>
 </html>
