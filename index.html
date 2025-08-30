@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Engagement Journey</title>
+    <title>Our Eternal Love Story</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&family=Marcellus&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -14,211 +14,297 @@
         }
         
         body {
-            font-family: 'Montserrat', sans-serif;
-            background: linear-gradient(to bottom, #fffaf0, #fff5e6);
-            color: #4a3c2a;
+            font-family: 'Cormorant Garamond', serif;
+            background: #fcf8f5;
+            color: #5a4b41;
             line-height: 1.6;
+            overflow-x: hidden;
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 20px;
         }
         
         /* Header Styles */
-        header {
-            text-align: center;
-            padding: 60px 20px;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                        url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80');
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                        url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
             color: white;
-            border-radius: 10px;
-            margin-bottom: 40px;
             position: relative;
-            overflow: hidden;
         }
         
-        header::before {
+        .hero::before {
             content: "";
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath fill='%23ffd700' fill-opacity='0.2' d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z'%3E%3C/path%3E%3C/svg%3E");
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 200 200'%3E%3Cpath fill='%23ffffff' fill-opacity='0.1' d='M42.7,57.7l-5.4-5.4c-1.8-1.8-1.8-4.6,0-6.4s4.6-1.8,6.4,0l5.4,5.4c1.8,1.8,1.8,4.6,0,6.4C47.3,59.5,44.5,59.5,42.7,57.7z M31.2,46.7l-5.4-5.4c-1.8-1.8-1.8-4.6,0-6.4s4.6-1.8,6.4,0l5.4,5.4c1.8,1.8,1.8,4.6,0,6.4C35.8,48.5,33,48.5,31.2,46.7z M20.3,36.3l-5.4-5.4c-1.8-1.8-1.8-4.6,0-6.4s4.6-1.8,6.4,0l5.4,5.4c1.8,1.8,1.8,4.6,0,6.4C24.9,38.1,22.1,38.1,20.3,36.3z'%3E%3C/path%3E%3C/svg%3E");
             opacity: 0.3;
         }
         
-        header h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 4rem;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            color: #fff;
-        }
-        
-        header p {
-            font-size: 1.5rem;
+        .hero-content {
             max-width: 800px;
-            margin: 0 auto;
+            z-index: 1;
+            padding: 20px;
+            animation: fadeIn 2s ease;
+        }
+        
+        .hero h1 {
+            font-family: 'Marcellus', serif;
+            font-size: 5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            letter-spacing: 3px;
+        }
+        
+        .hero p {
+            font-size: 1.8rem;
             font-style: italic;
+            margin-bottom: 40px;
         }
         
-        .heart-divider {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 30px 0;
-        }
-        
-        .heart-divider i {
-            color: #ff6b6b;
-            margin: 0 15px;
+        .hero-date {
             font-size: 1.5rem;
+            letter-spacing: 5px;
+            margin-top: 30px;
         }
         
-        .heart-divider::before,
-        .heart-divider::after {
-            content: "";
-            flex: 1;
-            height: 2px;
-            background: linear-gradient(to right, transparent, #ff9e9e, transparent);
+        .scroll-down {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 2rem;
+            animation: bounce 2s infinite;
         }
         
-        /* Timeline Styles */
-        .timeline {
+        /* Navigation */
+        .nav-container {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-family: 'Marcellus', serif;
+            font-size: 1.8rem;
+            color: #b76e79;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 40px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #5a4b41;
+            font-weight: 500;
+            transition: color 0.3s;
             position: relative;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #b76e79;
+            transition: width 0.3s;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .nav-links a:hover {
+            color: #b76e79;
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 100px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title h2 {
+            font-family: 'Marcellus', serif;
+            font-size: 3rem;
+            color: #b76e79;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(to right, #b76e79, #e6c9a3);
+        }
+        
+        .section-title p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: #8a7866;
+        }
+        
+        /* Story Section */
+        .story-timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 40px 0;
         }
         
-        .timeline::before {
-            content: "";
+        .story-timeline::after {
+            content: '';
             position: absolute;
+            width: 6px;
+            background: linear-gradient(to bottom, #e6c9a3, #b76e79, #e6c9a3);
             top: 0;
+            bottom: 0;
             left: 50%;
-            width: 4px;
-            height: 100%;
-            background: linear-gradient(to bottom, #ff9e9e, #ff6b6b, #ff9e9e);
-            transform: translateX(-50%);
+            margin-left: -3px;
+            border-radius: 10px;
         }
         
-        .timeline-item {
-            display: flex;
-            justify-content: flex-end;
-            padding-right: 30px;
+        .story-item {
             position: relative;
-            margin-bottom: 60px;
             width: 50%;
-        }
-        
-        .timeline-item:nth-child(even) {
-            align-self: flex-end;
-            justify-content: flex-start;
-            padding-left: 30px;
-            padding-right: 0;
-            left: 50%;
-        }
-        
-        .timeline-content {
+            padding: 20px 40px;
             background: white;
-            padding: 25px;
             border-radius: 10px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            width: 85%;
-            position: relative;
-            border-top: 5px solid #ff6b6b;
-            transition: transform 0.3s ease;
+            margin-bottom: 80px;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
         }
         
-        .timeline-content:hover {
-            transform: translateY(-5px);
+        .story-item.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
         
-        .timeline-item:nth-child(even) .timeline-content {
-            border-top: 5px solid #6b5ce7;
+        .story-item:nth-child(even) {
+            left: 50%;
         }
         
-        .timeline-content::before {
-            content: "";
+        .story-item::after {
+            content: '';
             position: absolute;
+            width: 25px;
+            height: 25px;
+            background: #b76e79;
+            border: 4px solid #e6c9a3;
+            border-radius: 50%;
             top: 30px;
-            right: -15px;
-            width: 0;
-            height: 0;
-            border-left: 15px solid white;
-            border-top: 15px solid transparent;
-            border-bottom: 15px solid transparent;
+            z-index: 1;
         }
         
-        .timeline-item:nth-child(even) .timeline-content::before {
-            right: auto;
-            left: -15px;
-            border-left: none;
-            border-right: 15px solid white;
+        .story-item:nth-child(odd)::after {
+            right: -17px;
         }
         
-        .date {
-            background: #ff6b6b;
+        .story-item:nth-child(even)::after {
+            left: -17px;
+        }
+        
+        .story-date {
+            background: #b76e79;
             color: white;
             padding: 10px 20px;
             border-radius: 30px;
-            position: absolute;
-            top: -15px;
-            left: 30px;
+            display: inline-block;
+            margin-bottom: 20px;
             font-weight: 500;
-            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+            box-shadow: 0 5px 15px rgba(183, 110, 121, 0.3);
         }
         
-        .timeline-item:nth-child(even) .date {
-            background: #6b5ce7;
-            left: auto;
-            right: 30px;
-            box-shadow: 0 5px 15px rgba(107, 92, 231, 0.4);
-        }
-        
-        .timeline-content h3 {
+        .story-content h3 {
             font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
+            font-size: 2rem;
             margin-bottom: 15px;
-            color: #4a3c2a;
+            color: #5a4b41;
         }
         
-        .timeline-content p {
-            margin-bottom: 15px;
-            color: #6a5d4d;
+        .story-content p {
+            margin-bottom: 20px;
+            color: #8a7866;
+            line-height: 1.8;
         }
         
-        .photo-gallery {
+        .story-gallery {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 15px;
             margin-top: 20px;
         }
         
-        .gallery-item {
-            height: 120px;
+        .story-img {
+            height: 150px;
             border-radius: 8px;
             overflow: hidden;
-            cursor: pointer;
-            transition: transform 0.3s ease;
             position: relative;
+            cursor: pointer;
         }
         
-        .gallery-item:hover {
-            transform: scale(1.05);
-        }
-        
-        .gallery-item img {
+        .story-img img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: transform 0.5s ease;
         }
         
-        .gallery-item::after {
-            content: "";
+        .story-img:hover img {
+            transform: scale(1.1);
+        }
+        
+        .story-img::after {
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
@@ -229,61 +315,58 @@
             transition: opacity 0.3s ease;
         }
         
-        .gallery-item:hover::after {
+        .story-img:hover::after {
             opacity: 1;
         }
         
         /* Memory Section */
         .memory-section {
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            margin: 40px 0;
-            text-align: center;
-        }
-        
-        .memory-section h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            color: #4a3c2a;
+            background: linear-gradient(to bottom, #f9f5f2, #f3e9e1);
             position: relative;
-            display: inline-block;
+            overflow: hidden;
         }
         
-        .memory-section h2::after {
-            content: "";
+        .memory-section::before {
+            content: '';
             position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 3px;
-            background: linear-gradient(to right, #ff6b6b, #6b5ce7);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath fill='%23b76e79' fill-opacity='0.05' d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z'%3E%3C/path%3E%3C/svg%3E");
+            opacity: 0.3;
         }
         
         .memory-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         
         .memory-card {
-            background: #fffaf0;
-            border-radius: 10px;
+            background: white;
+            border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        
+        .memory-card.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
         
         .memory-card:hover {
             transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
         
         .memory-img {
-            height: 200px;
+            height: 250px;
             overflow: hidden;
         }
         
@@ -291,214 +374,290 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.5s ease;
+            transition: transform 0.8s ease;
         }
         
         .memory-card:hover .memory-img img {
             transform: scale(1.1);
         }
         
-        .memory-details {
-            padding: 20px;
+        .memory-content {
+            padding: 25px;
+            text-align: center;
         }
         
-        .memory-details h3 {
+        .memory-content h3 {
             font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            color: #4a3c2a;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #5a4b41;
         }
         
-        .memory-details p {
-            color: #6a5d4d;
-            margin-bottom: 15px;
+        .memory-content p {
+            color: #8a7866;
+            margin-bottom: 20px;
+            line-height: 1.8;
         }
         
         /* Footer */
         footer {
-            text-align: center;
-            padding: 40px;
-            margin-top: 60px;
-            background: linear-gradient(to right, #4a3c2a, #6a5d4d);
+            background: linear-gradient(to right, #5a4b41, #8a7866);
             color: white;
-            border-radius: 10px;
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
         }
         
-        footer p {
-            margin: 10px 0;
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cpath fill='%23ffffff' fill-opacity='0.05' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 0h-5v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 63.66 27l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 31.95V16z'%3E%3C/path%3E%3C/svg%3E");
+            opacity: 0.2;
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
         }
         
         .couple-name {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
+            font-family: 'Marcellus', serif;
+            font-size: 3rem;
             margin-bottom: 20px;
+            color: #e6c9a3;
+        }
+        
+        .footer-quote {
+            font-style: italic;
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .footer-date {
+            letter-spacing: 3px;
+            margin-top: 20px;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+            40% { transform: translateY(-20px) translateX(-50%); }
+            60% { transform: translateY(-10px) translateX(-50%); }
         }
         
         /* Responsive Design */
-        @media (max-width: 992px) {
-            .photo-gallery {
-                grid-template-columns: repeat(2, 1fr);
+        @media (max-width: 1100px) {
+            .story-timeline::after {
+                left: 31px;
+            }
+            
+            .story-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .story-item:nth-child(even) {
+                left: 0;
+            }
+            
+            .story-item::after {
+                left: 22px;
+            }
+            
+            .story-item:nth-child(odd)::after {
+                right: auto;
+                left: 22px;
             }
         }
         
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5rem;
+            .hero h1 {
+                font-size: 3.5rem;
             }
             
-            .timeline::before {
-                left: 30px;
+            .hero p {
+                font-size: 1.5rem;
             }
             
-            .timeline-item {
-                width: 100%;
-                padding-left: 70px;
-                padding-right: 0;
+            .nav-links {
+                display: none;
             }
             
-            .timeline-item:nth-child(even) {
-                left: 0;
-            }
-            
-            .timeline-content::before {
-                left: -15px;
-                right: auto;
-                border-right: 15px solid white;
-                border-left: none;
-            }
-            
-            .date {
-                left: 70px;
-            }
-            
-            .timeline-item:nth-child(even) .date {
-                right: auto;
-                left: 70px;
+            .story-gallery {
+                grid-template-columns: repeat(2, 1fr);
             }
             
             .memory-grid {
                 grid-template-columns: 1fr;
             }
+            
+            .couple-name {
+                font-size: 2.5rem;
+            }
+            
+            .footer-quote {
+                font-size: 1.2rem;
+            }
         }
         
         @media (max-width: 576px) {
-            .photo-gallery {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2.5rem;
+            }
+            
+            .story-gallery {
                 grid-template-columns: 1fr;
             }
             
-            header h1 {
-                font-size: 2rem;
-            }
-            
-            header p {
-                font-size: 1.2rem;
+            .story-img {
+                height: 200px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Our Engagement Journey</h1>
-            <p>"The best thing to hold onto in life is each other." - Audrey Hepburn</p>
-        </header>
-        
-        <div class="heart-divider">
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
+    <div class="nav-container">
+        <nav>
+            <div class="logo">Eternal Love</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#memories">Memories</a></li>
+                <li><a href="#footer">Forever</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="hero" id="home">
+        <div class="hero-content">
+            <h1>Our Eternal Love</h1>
+            <p>"In your arms, I have found my forever home"</p>
+            <div class="hero-date">18 . 12 . 2024 - The Beginning</div>
         </div>
-        
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Our First Meeting at Her House</h3>
-                    <p>The day we first met at her place, a moment that changed our lives forever. The air was filled with excitement and nervous anticipation as we began our journey together.</p>
-                    <div class="photo-gallery">
-                        <div class="gallery-item">
-                            <img src="images/img11.jpeg" alt="Meeting at home">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="images/img12.jpeg" alt="First meeting">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="images/img13.jpeg" alt="Together at home">
-                        </div>
-                    </div>
-                </div>
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </div>
+
+    <section id="story">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Beautiful Journey</h2>
+                <p>Every moment with you is a precious memory I'll cherish forever</p>
             </div>
             
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Our Engagement Day</h3>
-                    <p>The magical day we officially got engaged! Surrounded by loved ones, we promised to spend our lives together. The ring symbolized our commitment and endless love.</p>
-                    <div class="photo-gallery">
-                        <div class="gallery-item">
-                            <img src="images/img21.jpeg" alt="Engagement moment">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="images/img22.jpeg" alt="Engagement ring">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="images/img23.jpeg" alt="Celebration">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Beach Photoshoot</h3>
-                    <p>A beautiful day at the beach, capturing our love with the sunset as our backdrop. The waves whispered our promises as we created memories that would last a lifetime.</p>
-                    <div class="photo-gallery">
-                        <div class="gallery-item">
-                            <img src="images/img31.jpeg" alt="Beach photoshoot">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="images/img33.jpeg" alt="Beach couple">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="images/img34.jpeg" alt="Sunset beach">
+            <div class="story-timeline">
+                <div class="story-item">
+                    <div class="story-date">December 18, 2024</div>
+                    <div class="story-content">
+                        <h3>First Meeting at Her House</h3>
+                        <p>The day our eyes met and our hearts connected. I knew from that moment that my life had changed forever. The way you smiled, the way you laughed - everything was perfect.</p>
+                        <div class="story-gallery">
+                            <div class="story-img">
+                                <img src="images/img11.jpeg" alt="First meeting">
+                            </div>
+                            <div class="story-img">
+                                <img src="images/img12.jpeg" alt="Together at home">
+                            </div>
+                            <div class="story-img">
+                                <img src="images/img13.jpeg" alt="Special moment">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Shopping & Romantic Dinner</h3>
-                    <p>From shopping for our future home to enjoying a candlelit dinner, we celebrated our love in style. Each moment was a treasure, each laugh a memory to cherish.</p>
-                    <div class="photo-gallery">
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Shopping together">
+                
+                <div class="story-item">
+                    <div class="story-date">February 3, 2025</div>
+                    <div class="story-content">
+                        <h3>Engagement Day</h3>
+                        <p>The most magical day of my life. Down on one knee, with a ring and my heart in my hands, I asked you to be mine forever. Your "yes" was the beginning of our forever.</p>
+                        <div class="story-gallery">
+                            <div class="story-img">
+                                <img src="images/img21.jpeg" alt="Engagement moment">
+                            </div>
+                            <div class="story-img">
+                                <img src="images/img22.jpeg" alt="Engagement ring">
+                            </div>
+                            <div class="story-img">
+                                <img src="images/img23.jpeg" alt="Celebration">
+                            </div>
                         </div>
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Romantic dinner">
+                    </div>
+                </div>
+                
+                <div class="story-item">
+                    <div class="story-date">February 15, 2025</div>
+                    <div class="story-content">
+                        <h3>Beach Photoshoot</h3>
+                        <p>The golden hour at the beach, with the waves gently crashing and the sun setting behind us. These photos capture the pure joy and love we share, forever frozen in time.</p>
+                        <div class="story-gallery">
+                            <div class="story-img">
+                                <img src="images/img31.jpeg" alt="Beach photoshoot">
+                            </div>
+                            <div class="story-img">
+                                <img src="images/img33.jpeg" alt="Beach couple">
+                            </div>
+                            <div class="story-img">
+                                <img src="images/img34.jpeg" alt="Sunset beach">
+                            </div>
                         </div>
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Candlelight dinner">
+                    </div>
+                </div>
+                
+                <div class="story-item">
+                    <div class="story-date">February 20, 2025</div>
+                    <div class="story-content">
+                        <h3>Shopping & Romantic Dinner</h3>
+                        <p>From choosing our future together while shopping to the intimate candlelit dinner, every moment was perfect. The way your eyes sparkle in the candlelight is my favorite sight.</p>
+                        <div class="story-gallery">
+                            <div class="story-img">
+                                <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Shopping together">
+                            </div>
+                            <div class="story-img">
+                                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Romantic dinner">
+                            </div>
+                            <div class="story-img">
+                                <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Candlelight dinner">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <div class="heart-divider">
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-        </div>
-        
-        <div class="memory-section">
-            <h2>Our Precious Memories</h2>
+    </section>
+
+    <section class="memory-section" id="memories">
+        <div class="container">
+            <div class="section-title">
+                <h2>Precious Memories</h2>
+                <p>Every moment with you becomes a beautiful memory</p>
+            </div>
+            
             <div class="memory-grid">
                 <div class="memory-card">
                     <div class="memory-img">
                         <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Memory 1">
                     </div>
-                    <div class="memory-details">
+                    <div class="memory-content">
                         <h3>First Meeting</h3>
-                        <p>The day our eyes met and our hearts connected forever.</p>
+                        <p>The day our eyes met and our hearts connected forever. I knew you were the one from that moment.</p>
                     </div>
                 </div>
                 
@@ -506,9 +665,9 @@
                     <div class="memory-img">
                         <img src="https://images.unsplash.com/photo-1532117182044-031e7cd916ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Memory 2">
                     </div>
-                    <div class="memory-details">
+                    <div class="memory-content">
                         <h3>The Proposal</h3>
-                        <p>Down on one knee, with a ring and a heart full of love.</p>
+                        <p>Down on one knee, with a ring and a heart full of love, I asked you to spend forever with me.</p>
                     </div>
                 </div>
                 
@@ -516,45 +675,91 @@
                     <div class="memory-img">
                         <img src="https://images.unsplash.com/photo-1516487106395-f2d269d6a21c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Memory 3">
                     </div>
-                    <div class="memory-details">
+                    <div class="memory-content">
                         <h3>Beach Sunset</h3>
-                        <p>Walking hand in hand as the sun dipped below the horizon.</p>
+                        <p>Walking hand in hand as the sun dipped below the horizon, promising each other forever.</p>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <footer>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-content">
             <div class="couple-name">Our Journey Together</div>
+            <div class="footer-quote">"I saw that you were perfect, and so I loved you. Then I saw that you were not perfect and I loved you even more."</div>
             <p>Made with ❤️ to celebrate our engagement</p>
-            <p>© 2025 - Forever</p>
-        </footer>
-    </div>
+            <div class="footer-date">18 . 12 . 2024 - The Beginning of Forever</div>
+        </div>
+    </footer>
 
     <script>
-        // Simple animation for timeline items
+        // Scroll animations
         document.addEventListener('DOMContentLoaded', function() {
-            const timelineItems = document.querySelectorAll('.timeline-content');
+            const storyItems = document.querySelectorAll('.story-item');
+            const memoryCards = document.querySelectorAll('.memory-card');
+            const scrollDown = document.querySelector('.scroll-down');
             
-            timelineItems.forEach((item, index) => {
-                // Add delay based on index for staggered animation
-                item.style.animationDelay = `${index * 0.2}s`;
+            // Scroll to content when arrow is clicked
+            scrollDown.addEventListener('click', function() {
+                window.scrollTo({
+                    top: document.getElementById('story').offsetTop - 80,
+                    behavior: 'smooth'
+                });
             });
             
-            // Add hover effect to gallery items
-            const galleryItems = document.querySelectorAll('.gallery-item');
-            galleryItems.forEach(item => {
-                item.addEventListener('mouseenter', function() {
-                    this.style.transform = 'scale(1.05)';
+            // Nav background change on scroll
+            window.addEventListener('scroll', function() {
+                const nav = document.querySelector('.nav-container');
+                if (window.scrollY > 50) {
+                    nav.style.background = 'rgba(255, 255, 255, 0.95)';
+                    nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+                } else {
+                    nav.style.background = 'rgba(255, 255, 255, 0.8)';
+                    nav.style.boxShadow = 'none';
+                }
+                
+                // Animate story items on scroll
+                storyItems.forEach(item => {
+                    const position = item.getBoundingClientRect();
+                    if (position.top < window.innerHeight - 100) {
+                        item.classList.add('visible');
+                    }
                 });
                 
-                item.addEventListener('mouseleave', function() {
-                    this.style.transform = 'scale(1)';
+                // Animate memory cards on scroll
+                memoryCards.forEach(card => {
+                    const position = card.getBoundingClientRect();
+                    if (position.top < window.innerHeight - 100) {
+                        card.classList.add('visible');
+                    }
                 });
             });
             
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Initialize animations on page load
+            window.dispatchEvent(new Event('scroll'));
+            
             // Console message for fun
-            console.log("%c❤️ Love is in the air! ❤️", "color: #ff6b6b; font-size: 18px; font-weight: bold;");
+            console.log("%c❤️ Eternal Love ❤️", "color: #b76e79; font-size: 20px; font-weight: bold;");
+            console.log("%cCongratulations on your engagement!", "color: #8a7866; font-size: 16px;");
         });
     </script>
 </body>
