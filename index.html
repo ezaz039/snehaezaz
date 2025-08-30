@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Cormorant Garamond', serif;
             background: #fcf8f5;
@@ -20,17 +20,17 @@
             line-height: 1.6;
             overflow-x: hidden;
         }
-        
+
         .container {
             max-width: 1400px;
             margin: 0 auto;
             padding: 20px;
         }
-        
+
         /* Header Styles */
         .hero {
             height: 100vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
                         url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80');
             background-size: cover;
             background-position: center;
@@ -43,7 +43,7 @@
             color: white;
             position: relative;
         }
-        
+
         .hero::before {
             content: "";
             position: absolute;
@@ -54,14 +54,14 @@
             background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 200 200'%3E%3Cpath fill='%23ffffff' fill-opacity='0.1' d='M42.7,57.7l-5.4-5.4c-1.8-1.8-1.8-4.6,0-6.4s4.6-1.8,6.4,0l5.4,5.4c1.8,1.8,1.8,4.6,0,6.4C47.3,59.5,44.5,59.5,42.7,57.7z M31.2,46.7l-5.4-5.4c-1.8-1.8-1.8-4.6,0-6.4s4.6-1.8,6.4,0l5.4,5.4c1.8,1.8,1.8,4.6,0,6.4C35.8,48.5,33,48.5,31.2,46.7z M20.3,36.3l-5.4-5.4c-1.8-1.8-1.8-4.6,0-6.4s4.6-1.8,6.4,0l5.4,5.4c1.8,1.8,1.8,4.6,0,6.4C24.9,38.1,22.1,38.1,20.3,36.3z'%3E%3C/path%3E%3C/svg%3E");
             opacity: 0.3;
         }
-        
+
         .hero-content {
             max-width: 800px;
             z-index: 1;
             padding: 20px;
             animation: fadeIn 2s ease;
         }
-        
+
         .hero h1 {
             font-family: 'Marcellus', serif;
             font-size: 5rem;
@@ -69,19 +69,19 @@
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
             letter-spacing: 3px;
         }
-        
+
         .hero p {
             font-size: 1.8rem;
             font-style: italic;
             margin-bottom: 40px;
         }
-        
+
         .hero-date {
             font-size: 1.5rem;
             letter-spacing: 5px;
             margin-top: 30px;
         }
-        
+
         .scroll-down {
             position: absolute;
             bottom: 30px;
@@ -91,7 +91,7 @@
             font-size: 2rem;
             animation: bounce 2s infinite;
         }
-        
+
         /* Navigation */
         .nav-container {
             position: fixed;
@@ -102,7 +102,7 @@
             box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(10px);
         }
-        
+
         nav {
             display: flex;
             justify-content: space-between;
@@ -111,22 +111,22 @@
             max-width: 1400px;
             margin: 0 auto;
         }
-        
+
         .logo {
             font-family: 'Marcellus', serif;
             font-size: 1.8rem;
             color: #b76e79;
         }
-        
+
         .nav-links {
             display: flex;
             list-style: none;
         }
-        
+
         .nav-links li {
             margin-left: 40px;
         }
-        
+
         .nav-links a {
             text-decoration: none;
             color: #5a4b41;
@@ -134,7 +134,7 @@
             transition: color 0.3s;
             position: relative;
         }
-        
+
         .nav-links a::after {
             content: '';
             position: absolute;
@@ -145,25 +145,25 @@
             background: #b76e79;
             transition: width 0.3s;
         }
-        
+
         .nav-links a:hover::after {
             width: 100%;
         }
-        
+
         .nav-links a:hover {
             color: #b76e79;
         }
-        
+
         /* Section Styles */
         section {
             padding: 100px 0;
         }
-        
+
         .section-title {
             text-align: center;
             margin-bottom: 60px;
         }
-        
+
         .section-title h2 {
             font-family: 'Marcellus', serif;
             font-size: 3rem;
@@ -172,7 +172,7 @@
             display: inline-block;
             margin-bottom: 20px;
         }
-        
+
         .section-title h2::after {
             content: '';
             position: absolute;
@@ -183,14 +183,14 @@
             height: 3px;
             background: linear-gradient(to right, #b76e79, #e6c9a3);
         }
-        
+
         .section-title p {
             font-size: 1.2rem;
             max-width: 700px;
             margin: 0 auto;
             color: #8a7866;
         }
-        
+
         /* Story Section */
         .story-timeline {
             position: relative;
@@ -198,7 +198,7 @@
             margin: 0 auto;
             padding: 40px 0;
         }
-        
+
         .story-timeline::after {
             content: '';
             position: absolute;
@@ -210,7 +210,7 @@
             margin-left: -3px;
             border-radius: 10px;
         }
-        
+
         .story-item {
             position: relative;
             width: 50%;
@@ -223,16 +223,16 @@
             transform: translateY(50px);
             transition: all 0.8s ease;
         }
-        
+
         .story-item.visible {
             opacity: 1;
             transform: translateY(0);
         }
-        
+
         .story-item:nth-child(even) {
             left: 50%;
         }
-        
+
         .story-item::after {
             content: '';
             position: absolute;
@@ -244,15 +244,15 @@
             top: 30px;
             z-index: 1;
         }
-        
+
         .story-item:nth-child(odd)::after {
             right: -17px;
         }
-        
+
         .story-item:nth-child(even)::after {
             left: -17px;
         }
-        
+
         .story-date {
             background: #b76e79;
             color: white;
@@ -263,27 +263,27 @@
             font-weight: 500;
             box-shadow: 0 5px 15px rgba(183, 110, 121, 0.3);
         }
-        
+
         .story-content h3 {
             font-family: 'Playfair Display', serif;
             font-size: 2rem;
             margin-bottom: 15px;
             color: #5a4b41;
         }
-        
+
         .story-content p {
             margin-bottom: 20px;
             color: #8a7866;
             line-height: 1.8;
         }
-        
+
         .story-gallery {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 15px;
             margin-top: 20px;
         }
-        
+
         .story-img {
             height: 150px;
             border-radius: 8px;
@@ -291,18 +291,18 @@
             position: relative;
             cursor: pointer;
         }
-        
+
         .story-img img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
-        
+
         .story-img:hover img {
             transform: scale(1.1);
         }
-        
+
         .story-img::after {
             content: '';
             position: absolute;
@@ -314,18 +314,18 @@
             opacity: 0;
             transition: opacity 0.3s ease;
         }
-        
+
         .story-img:hover::after {
             opacity: 1;
         }
-        
+
         /* Memory Section */
         .memory-section {
             background: linear-gradient(to bottom, #f9f5f2, #f3e9e1);
             position: relative;
             overflow: hidden;
         }
-        
+
         .memory-section::before {
             content: '';
             position: absolute;
@@ -336,7 +336,7 @@
             background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath fill='%23b76e79' fill-opacity='0.05' d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z'%3E%3C/path%3E%3C/svg%3E");
             opacity: 0.3;
         }
-        
+
         .memory-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -344,7 +344,7 @@
             max-width: 1200px;
             margin: 0 auto;
         }
-        
+
         .memory-card {
             background: white;
             border-radius: 15px;
@@ -354,51 +354,51 @@
             opacity: 0;
             transform: translateY(50px);
         }
-        
+
         .memory-card.visible {
             opacity: 1;
             transform: translateY(0);
         }
-        
+
         .memory-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
-        
+
         .memory-img {
             height: 250px;
             overflow: hidden;
         }
-        
+
         .memory-img img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.8s ease;
         }
-        
+
         .memory-card:hover .memory-img img {
             transform: scale(1.1);
         }
-        
+
         .memory-content {
             padding: 25px;
             text-align: center;
         }
-        
+
         .memory-content h3 {
             font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
             margin-bottom: 15px;
             color: #5a4b41;
         }
-        
+
         .memory-content p {
             color: #8a7866;
             margin-bottom: 20px;
             line-height: 1.8;
         }
-        
+
         /* Footer */
         footer {
             background: linear-gradient(to right, #5a4b41, #8a7866);
@@ -407,7 +407,7 @@
             padding: 60px 20px;
             position: relative;
         }
-        
+
         footer::before {
             content: '';
             position: absolute;
@@ -418,114 +418,114 @@
             background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cpath fill='%23ffffff' fill-opacity='0.05' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 0h-5v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 63.66 27l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 31.95V16z'%3E%3C/path%3E%3C/svg%3E");
             opacity: 0.2;
         }
-        
+
         .footer-content {
             max-width: 800px;
             margin: 0 auto;
             position: relative;
             z-index: 1;
         }
-        
+
         .couple-name {
             font-family: 'Marcellus', serif;
             font-size: 3rem;
             margin-bottom: 20px;
             color: #e6c9a3;
         }
-        
+
         .footer-quote {
             font-style: italic;
             font-size: 1.5rem;
             margin-bottom: 30px;
             line-height: 1.6;
         }
-        
+
         .footer-date {
             letter-spacing: 3px;
             margin-top: 20px;
         }
-        
+
         /* Animations */
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
-        
+
         @keyframes bounce {
             0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
             40% { transform: translateY(-20px) translateX(-50%); }
             60% { transform: translateY(-10px) translateX(-50%); }
         }
-        
+
         /* Responsive Design */
         @media (max-width: 1100px) {
             .story-timeline::after {
                 left: 31px;
             }
-            
+
             .story-item {
                 width: 100%;
                 padding-left: 70px;
                 padding-right: 25px;
             }
-            
+
             .story-item:nth-child(even) {
                 left: 0;
             }
-            
+
             .story-item::after {
                 left: 22px;
             }
-            
+
             .story-item:nth-child(odd)::after {
                 right: auto;
                 left: 22px;
             }
         }
-        
+
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 3.5rem;
             }
-            
+
             .hero p {
                 font-size: 1.5rem;
             }
-            
+
             .nav-links {
                 display: none;
             }
-            
+
             .story-gallery {
                 grid-template-columns: repeat(2, 1fr);
             }
-            
+
             .memory-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .couple-name {
                 font-size: 2.5rem;
             }
-            
+
             .footer-quote {
                 font-size: 1.2rem;
             }
         }
-        
+
         @media (max-width: 576px) {
             .hero h1 {
                 font-size: 2.8rem;
             }
-            
+
             .section-title h2 {
                 font-size: 2.5rem;
             }
-            
+
             .story-gallery {
                 grid-template-columns: 1fr;
             }
-            
+
             .story-img {
                 height: 200px;
             }
@@ -533,234 +533,244 @@
     </style>
 </head>
 <body>
-    <div class="nav-container">
-        <nav>
-            <div class="logo">Eternal Love</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#story">Our Story</a></li>
-                <li><a href="#memories">Memories</a></li>
-                <li><a href="#footer">Forever</a></li>
-            </ul>
-        </nav>
+<div class="nav-container">
+    <nav>
+        <div class="logo">Eternal Love</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#memories">Memories</a></li>
+            <li><a href="#footer">Forever</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="hero" id="home">
+    <div class="hero-content">
+        <h1>Our Eternal Love</h1>
+        <p>"In your arms, I have found my forever home"</p>
+        <div class="hero-date">18 . 12 . 2024 - The Beginning</div>
     </div>
+    <div class="scroll-down">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</div>
 
-    <div class="hero" id="home">
-        <div class="hero-content">
-            <h1>Our Eternal Love</h1>
-            <p>"In your arms, I have found my forever home"</p>
-            <div class="hero-date">18 . 12 . 2024 - The Beginning</div>
+<section id="story">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Beautiful Journey</h2>
+            <p>Every moment with you is a precious memory I'll cherish forever</p>
         </div>
-        <div class="scroll-down">
-            <i class="fas fa-chevron-down"></i>
+
+        <div class="story-timeline">
+            <div class="story-item">
+                <div class="story-date">December 18, 2024</div>
+                <div class="story-content">
+                    <h3>✨ First Meeting</h3>
+                    <p>It was the 18th of December 2024, a day that will forever be etched in my heart.
+                        I still remember walking into your home, nervous yet excited, not knowing that in a few moments my world was about to change.<br>
+                        The moment our eyes met, something magical happened. The room seemed to fade, and all I could see was your beautiful smile. There was a spark, a connection so pure and undeniable that I felt my soul whisper, “This is her.”<br>
+                        We talked, we laughed, and time slipped away effortlessly. Every word you spoke felt like music, every laugh felt like sunshine. At that moment, I realized that life had just gifted me something extraordinary — you.<br>
+                        That first meeting was not just an introduction, it was the beginning of a journey where two hearts became one, and destiny quietly smiled upon us. 💖</p>
+                    <div class="story-gallery">
+                        <div class="story-img">
+                            <img src="images/img11.jpeg" alt="First meeting">
+                        </div>
+                        <div class="story-img">
+                            <img src="images/img12.jpeg" alt="Together at home">
+                        </div>
+                        <div class="story-img">
+                            <img src="images/img13.jpeg" alt="Special moment">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="story-item">
+                <div class="story-date">February 3, 2025</div>
+                <div class="story-content">
+                    <h3>💍 Engagement Day</h3>
+                    <p>3rd February 2025 — a day wrapped in love, joy, and a touch of magic.<br>
+                        With my heart racing and emotions overflowing, I knelt down on one knee, holding not just a ring but a promise — a promise of forever, of love without limits, of a journey where every step would be together.<br>
+                        The world stood still as I looked into your eyes, hoping, dreaming, and silently praying for the word that would change everything. And then… you smiled, your eyes glistened, and with a simple, beautiful “Yes”, my life was complete.<br>
+                        At that moment, laughter turned to tears of joy, and our souls celebrated the bond we had sealed. That “Yes” wasn’t just an answer — it was the beginning of our forever story, the day two hearts officially decided to walk this life hand in hand. 💖</p>
+                    <div class="story-gallery">
+                        <div class="story-img">
+                            <img src="images/img21.jpeg" alt="Engagement moment">
+                        </div>
+                        <div class="story-img">
+                            <img src="images/img22.jpeg" alt="Engagement ring">
+                        </div>
+                        <div class="story-img">
+                            <img src="images/img23.jpeg" alt="Celebration">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="story-item">
+                <div class="story-date">February 15, 2025</div>
+                <div class="story-content">
+                    <h3>🌅 Beach Photoshoot</h3>
+                    <p>The beach became our canvas, and love painted every frame. As the golden sun dipped into the horizon, its warm glow wrapped around us, reflecting the happiness in our hearts. The gentle waves whispered promises of eternity, while the soft breeze carried laughter and stolen glances that only we could understand.<br>
+                        Each photograph captured more than just a moment — it captured our story. The joy in our smiles, the sparkle in our eyes, and the way time seemed to pause as we stood together. These weren’t just pictures; they were memories etched forever, reminders of the love that shines as endlessly as the ocean and as timeless as the setting sun. 🌊💖</p>
+                    <div class="story-gallery">
+                        <div class="story-img">
+                            <img src="images/img31.jpeg" alt="Beach photoshoot">
+                        </div>
+                        <div class="story-img">
+                            <img src="images/img33.jpeg" alt="Beach couple">
+                        </div>
+                        <div class="story-img">
+                            <img src="images/img34.jpeg" alt="Sunset beach">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="story-item">
+                <div class="story-date">February 20, 2025</div>
+                <div class="story-content">
+                    <h3>🛍️ Shopping & Romantic Dinner</h3>
+                    <p>Some days are just ordinary, yet with the right person, they become unforgettable. That day, we wandered through bustling streets and vibrant stores, hand in hand, dreaming aloud about the future we would build together. Every laugh, every playful debate over tiny choices, was a thread weaving our story closer, a tapestry of shared dreams and whispered promises.<br>
+                        As evening fell, the city lights softened into a warm glow, guiding us to an intimate candlelit dinner. The flickering light danced in your eyes, and for a moment, the whole world disappeared. In that glow, I saw not just the present but the promise of countless evenings like this — filled with love, laughter, and the quiet magic of simply being together.<br>
+                        Every smile, every glance, every shared moment made that day perfect — a memory I will treasure forever. 💖</p>
+                    <div class="story-gallery">
+                        <div class="story-img">
+                            <img src="images/img41.jpeg" alt="Shopping together">
+                        </div>
+                        <div class="story-img">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Romantic dinner">
+                        </div>
+                        <div class="story-img">
+                            <img src="images/img42.jpeg" alt="Candlelight dinner">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+</section>
 
-    <section id="story">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Beautiful Journey</h2>
-                <p>Every moment with you is a precious memory I'll cherish forever</p>
+<section class="memory-section" id="memories">
+    <div class="container">
+        <div class="section-title">
+            <h2>Precious Memories</h2>
+            <p>Every moment with you becomes a beautiful memory</p>
+        </div>
+
+        <div class="memory-grid">
+            <div class="memory-card">
+                <div class="memory-img">
+                    <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Memory 1">
+                </div>
+                <div class="memory-content">
+                    <h3>First Meeting</h3>
+                    <p>The day our eyes met and our hearts connected forever. I knew you were the one from that moment.</p>
+                </div>
             </div>
-            
-            <div class="story-timeline">
-                <div class="story-item">
-                    <div class="story-date">December 18, 2024</div>
-                    <div class="story-content">
-                        <h3>First Meeting at Her House</h3>
-                        <p>The day our eyes met and our hearts connected. I knew from that moment that my life had changed forever. The way you smiled, the way you laughed - everything was perfect.</p>
-                        <div class="story-gallery">
-                            <div class="story-img">
-                                <img src="images/img11.jpeg" alt="First meeting">
-                            </div>
-                            <div class="story-img">
-                                <img src="images/img12.jpeg" alt="Together at home">
-                            </div>
-                            <div class="story-img">
-                                <img src="images/img13.jpeg" alt="Special moment">
-                            </div>
-                        </div>
-                    </div>
+
+            <div class="memory-card">
+                <div class="memory-img">
+                    <img src="https://images.unsplash.com/photo-1532117182044-031e7cd916ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Memory 2">
                 </div>
-                
-                <div class="story-item">
-                    <div class="story-date">February 3, 2025</div>
-                    <div class="story-content">
-                        <h3>Engagement Day</h3>
-                        <p>The most magical day of my life. Down on one knee, with a ring and my heart in my hands, I asked you to be mine forever. Your "yes" was the beginning of our forever.</p>
-                        <div class="story-gallery">
-                            <div class="story-img">
-                                <img src="images/img21.jpeg" alt="Engagement moment">
-                            </div>
-                            <div class="story-img">
-                                <img src="images/img22.jpeg" alt="Engagement ring">
-                            </div>
-                            <div class="story-img">
-                                <img src="images/img23.jpeg" alt="Celebration">
-                            </div>
-                        </div>
-                    </div>
+                <div class="memory-content">
+                    <h3>The Proposal</h3>
+                    <p>Down on one knee, with a ring and a heart full of love, I asked you to spend forever with me.</p>
                 </div>
-                
-                <div class="story-item">
-                    <div class="story-date">February 15, 2025</div>
-                    <div class="story-content">
-                        <h3>Beach Photoshoot</h3>
-                        <p>The golden hour at the beach, with the waves gently crashing and the sun setting behind us. These photos capture the pure joy and love we share, forever frozen in time.</p>
-                        <div class="story-gallery">
-                            <div class="story-img">
-                                <img src="images/img31.jpeg" alt="Beach photoshoot">
-                            </div>
-                            <div class="story-img">
-                                <img src="images/img33.jpeg" alt="Beach couple">
-                            </div>
-                            <div class="story-img">
-                                <img src="images/img34.jpeg" alt="Sunset beach">
-                            </div>
-                        </div>
-                    </div>
+            </div>
+
+            <div class="memory-card">
+                <div class="memory-img">
+                    <img src="images/img51.jpeg" alt="Memory 3">
                 </div>
-                
-                <div class="story-item">
-                    <div class="story-date">February 20, 2025</div>
-                    <div class="story-content">
-                        <h3>Shopping & Romantic Dinner</h3>
-                        <p>From choosing our future together while shopping to the intimate candlelit dinner, every moment was perfect. The way your eyes sparkle in the candlelight is my favorite sight.</p>
-                        <div class="story-gallery">
-                            <div class="story-img">
-                                <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Shopping together">
-                            </div>
-                            <div class="story-img">
-                                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Romantic dinner">
-                            </div>
-                            <div class="story-img">
-                                <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Candlelight dinner">
-                            </div>
-                        </div>
-                    </div>
+                <div class="memory-content">
+                    <h3>Beach Sunset</h3>
+                    <p>Walking hand in hand as the sun dipped below the horizon, promising each other forever.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="memory-section" id="memories">
-        <div class="container">
-            <div class="section-title">
-                <h2>Precious Memories</h2>
-                <p>Every moment with you becomes a beautiful memory</p>
-            </div>
-            
-            <div class="memory-grid">
-                <div class="memory-card">
-                    <div class="memory-img">
-                        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Memory 1">
-                    </div>
-                    <div class="memory-content">
-                        <h3>First Meeting</h3>
-                        <p>The day our eyes met and our hearts connected forever. I knew you were the one from that moment.</p>
-                    </div>
-                </div>
-                
-                <div class="memory-card">
-                    <div class="memory-img">
-                        <img src="https://images.unsplash.com/photo-1532117182044-031e7cd916ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Memory 2">
-                    </div>
-                    <div class="memory-content">
-                        <h3>The Proposal</h3>
-                        <p>Down on one knee, with a ring and a heart full of love, I asked you to spend forever with me.</p>
-                    </div>
-                </div>
-                
-                <div class="memory-card">
-                    <div class="memory-img">
-                        <img src="https://images.unsplash.com/photo-1516487106395-f2d269d6a21c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Memory 3">
-                    </div>
-                    <div class="memory-content">
-                        <h3>Beach Sunset</h3>
-                        <p>Walking hand in hand as the sun dipped below the horizon, promising each other forever.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<footer id="footer">
+    <div class="footer-content">
+        <div class="couple-name">Our Journey Together</div>
+        <div class="footer-quote">"I saw that you were perfect, and so I loved you. Then I saw that you were not perfect and I loved you even more."</div>
+        <p>Made with ❤️ to celebrate our engagement</p>
+        <div class="footer-date">18 . 12 . 2024 - The Beginning of Forever</div>
+    </div>
+</footer>
 
-    <footer id="footer">
-        <div class="footer-content">
-            <div class="couple-name">Our Journey Together</div>
-            <div class="footer-quote">"I saw that you were perfect, and so I loved you. Then I saw that you were not perfect and I loved you even more."</div>
-            <p>Made with ❤️ to celebrate our engagement</p>
-            <div class="footer-date">18 . 12 . 2024 - The Beginning of Forever</div>
-        </div>
-    </footer>
+<script>
+    // Scroll animations
+    document.addEventListener('DOMContentLoaded', function() {
+        const storyItems = document.querySelectorAll('.story-item');
+        const memoryCards = document.querySelectorAll('.memory-card');
+        const scrollDown = document.querySelector('.scroll-down');
 
-    <script>
-        // Scroll animations
-        document.addEventListener('DOMContentLoaded', function() {
-            const storyItems = document.querySelectorAll('.story-item');
-            const memoryCards = document.querySelectorAll('.memory-card');
-            const scrollDown = document.querySelector('.scroll-down');
-            
-            // Scroll to content when arrow is clicked
-            scrollDown.addEventListener('click', function() {
-                window.scrollTo({
-                    top: document.getElementById('story').offsetTop - 80,
-                    behavior: 'smooth'
-                });
+        // Scroll to content when arrow is clicked
+        scrollDown.addEventListener('click', function() {
+            window.scrollTo({
+                top: document.getElementById('story').offsetTop - 80,
+                behavior: 'smooth'
             });
-            
-            // Nav background change on scroll
-            window.addEventListener('scroll', function() {
-                const nav = document.querySelector('.nav-container');
-                if (window.scrollY > 50) {
-                    nav.style.background = 'rgba(255, 255, 255, 0.95)';
-                    nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-                } else {
-                    nav.style.background = 'rgba(255, 255, 255, 0.8)';
-                    nav.style.boxShadow = 'none';
-                }
-                
-                // Animate story items on scroll
-                storyItems.forEach(item => {
-                    const position = item.getBoundingClientRect();
-                    if (position.top < window.innerHeight - 100) {
-                        item.classList.add('visible');
-                    }
-                });
-                
-                // Animate memory cards on scroll
-                memoryCards.forEach(card => {
-                    const position = card.getBoundingClientRect();
-                    if (position.top < window.innerHeight - 100) {
-                        card.classList.add('visible');
-                    }
-                });
-            });
-            
-            // Smooth scrolling for navigation links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-                    
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 80,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-            
-            // Initialize animations on page load
-            window.dispatchEvent(new Event('scroll'));
-            
-            // Console message for fun
-            console.log("%c❤️ Eternal Love ❤️", "color: #b76e79; font-size: 20px; font-weight: bold;");
-            console.log("%cCongratulations on your engagement!", "color: #8a7866; font-size: 16px;");
         });
-    </script>
+
+        // Nav background change on scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.nav-container');
+            if (window.scrollY > 50) {
+                nav.style.background = 'rgba(255, 255, 255, 0.95)';
+                nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                nav.style.background = 'rgba(255, 255, 255, 0.8)';
+                nav.style.boxShadow = 'none';
+            }
+
+            // Animate story items on scroll
+            storyItems.forEach(item => {
+                const position = item.getBoundingClientRect();
+                if (position.top < window.innerHeight - 100) {
+                    item.classList.add('visible');
+                }
+            });
+
+            // Animate memory cards on scroll
+            memoryCards.forEach(card => {
+                const position = card.getBoundingClientRect();
+                if (position.top < window.innerHeight - 100) {
+                    card.classList.add('visible');
+                }
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Initialize animations on page load
+        window.dispatchEvent(new Event('scroll'));
+
+        // Console message for fun
+        console.log("%c❤️ Eternal Love ❤️", "color: #b76e79; font-size: 20px; font-weight: bold;");
+        console.log("%cCongratulations on your engagement!", "color: #8a7866; font-size: 16px;");
+    });
+</script>
 </body>
 </html>
