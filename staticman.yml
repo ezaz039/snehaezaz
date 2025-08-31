@@ -1,0 +1,28 @@
+# Branch where Staticman will create pull requests
+branch: main
+
+# Directory where comments (or entries) will be stored in the repo
+# For example, each comment can be stored as a Markdown file
+path: comments
+
+# Whether comments should be moderated before being merged automatically
+moderation: false
+
+# Fields that will be submitted via the form
+# These correspond to your HTML form input names
+fields:
+  - name
+  - email
+  - message
+
+# Optional: Name of the commit author for pull requests
+commitMessage: "New comment from {{fields.name}}"
+
+# Optional: Allow submissions only from verified emails
+# restrictedTo: []
+
+# Optional: optional frontmatter template for the saved comment
+filename: "{{timestamp}}-{{slug}}"
+
+# Optional: formatting of stored comment (Markdown example)
+format: md

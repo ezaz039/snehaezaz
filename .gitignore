@@ -1,1 +1,4 @@
 .idea
+staticman_rsa
+staticman_rsa.pub
+.DS_Store
